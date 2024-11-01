@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes / Waituhi Watercress</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/watercress_logo_circle2.png" width="80" alt="Watercress Logo">
+        </a>
+        
+        <!-- Mobile menu icon, only shown on mobile -->
+        <div class="mobile-menu">
+            <div class="menu-icon" onclick="openMobileNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    
+        <!-- Main navigation, accessible on all screen sizes -->
+        <nav id="myNav">
+            <a class="close-mobile-nav" onclick="closeMobileNav()">&#10006;</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="production.html">Production</a></li>
+                <li><a class="active" href="recipes.html">Recipes</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="heading1">
+        <h1>Recipes</h1>
+    </div>
+
+
+    <div class="dropdown" style="float: right;">
+        <button onclick="toggleDropdown()" class="dropbtn" id="dropdownButton">Kiwi Boil-up &#129055;</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#boil-up" onclick="selectRecipe('Kiwi Boil-up')">Kiwi Boil-up</a>
+            <a href="#watercress-soup" onclick="selectRecipe('Watercress Soup')">Watercress Soup</a>
+            <a href="#watercress-salad" onclick="selectRecipe('Watercress Salad')">Watercress Salad</a>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <section id="boil-up" class="boil-up">
+            <div class="recipe">
+                <h1>Kiwi Boil-up</h1>
+                <div class="recipe-image">
+                    <img src="images/watercress_boilup_ai.png" alt="Bunch of Watercress">
+                </div>
+                <div class="recipe-description">
+                    <p>Even the pickiest eaters will enjoy this traditional kiwi boil-up as it's simple to prepare and
+                        wonderful to eat. On a Sunday, you may make it and let the pot do all the work!</p>
+                </div>
+                <!-- Tab Buttons -->
+                <div class="tab">
+                    <button class="tablinks active" onclick="openTab(event, 'ingredients')">Ingredients</button>
+                    <button class="tablinks" onclick="openTab(event, 'instructions')">Instructions</button>
+                </div>
+                <!-- Tab Content -->
+               
+                            <div class="recipe-details">
+
+                                <div id="ingredients" class="tabcontent" style="display: block;">
+                                    <!-- Default active tab content -->
+                                    <div class="ingredients">
+                                        <h4>Boil up:</h4>
+                                        <ul>
+                                            <li>2kg quality pork bones</li>
+                                            <li>500g new potatoes, halved</li>
+                                            <li>500g purple kumara, cut into large chunks</li>
+                                            <li>500g cabbage, cut into chunks</li>
+                                            <li>1 cup packed brown sugar</li>
+                                            <li>2 cups of fresh watercress</li>
+                                            <li>Salt and pepper</li>
+                                        </ul>
+                                        <h4>Doughboys:</h4>
+                                        <ul>
+                                            <li>1 cup self-raising flour</li>
+                                            <li>1 cup flour</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="instructions">
+                                    <div id="instructions" class="tabcontent">
+                                        <ol>
+                                            <li>In a large pot, cover the pork bones with water. Bring to a boil, then
+                                                simmer, cover with a lid and cook for 1 ½ - 2 hours, removing any foamy
+                                                stuff with a slotted spoon. Top up with water if it gets too low.</li>
+                                            <li>After 1 hour, add the potatoes and kumara.</li>
+                                            <li>After 1 ½ hours, add the cabbage and watercress.</li>
+                                            <li>To make the doughboys, mix the flour, seasoning, and water together to
+                                                create a soft dough. Divide and mold into 8 balls. Drop into the stock
+                                                and cook for 15 minutes.</li>
+                                            <li>Serve in bowls with fresh bread and tomato sauce.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <br>
+        </section>
+
+        <section id="watercress-soup" class="watercress-soup">
+            <div class="watercress-soup">
+                <h1>Watercress Soup</h1>
+
+                <p>Watercress soup is a delicious and nutritious soup that is perfect for any time of the year. It is
+                    easy
+                    to
+                    make and can be enjoyed as a light lunch or dinner. This soup is a great way to enjoy the health
+                    benefits of
+                    watercress while also enjoying a delicious and satisfying meal.</p>
+                <br>
+
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tkdCkkn63iE?si=oKTQyvQT42i-PBjJ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+
+            </div>
+        </section>
+        <br>
+        <br>
+        <section id="watercress-salad" class="watercress-salad">
+            <div class="recipe-container">
+                <h1>Watercress Salad Recipe</h1>
+
+
+                <div class="recipe-image">
+                    <img src="images/watercress_salad.png" alt="Watercress Salad">
+                </div>
+
+
+                <div class="recipe-description">
+                    <p>This salad is refreshing and works well as a side dish or light meal!</p>
+                </div>
+                <div class="tab">
+                    <button class="tablinks active" onclick="openTab(event, 'ingredients-salad')">Ingredients</button>
+                    <button class="tablinks" onclick="openTab(event, 'instructions-salad')">Instructions</button>
+                </div>
+                <div class="recipe-details">
+
+
+
+                    <div id="ingredients-salad" class="tabcontent" style="display: block;">
+                        <div class="ingredients">
+
+                            <ul>
+                                <br>
+                                <li>2 cups fresh watercress(trimmed and washed)</li>
+                                <li>1/2 cup of cherry tomatoes(halved)</li>
+                                <li>1/4 red onion (thinly sliced)</li>
+                                <li>1/2 cucumber (sliced)</li>
+                                <li>1 avocado (sliced or diced)</li>
+                                <li>1/4 cup feta cheese (crumbled)</li>
+                                <li>1/4 cup walnuts or almonds (optional, toasted)</li>
+                                <li>Olive oil (for dressing)</li>
+                                <li>Lemon juice (for dressing)</li>
+                                <li>Salt and pepper (to taste)</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="instructions">
+                        <div id="instructions-salad" class="tabcontent">
+
+                            <ol>
+                                <br>
+                                <li><b>Prepare the ingredients:</b> Wash and trim the watercress, ensuring any large
+                                    stems
+                                    are removed.Slice the tomatoes, oniion, cucumber, and avocado.</li>
+                                <li><b>Toast the nuts</b> (if using): In a dry skillet over medium heat, toast the
+                                    walnuts or almonds for about 3-4 minutes, stirring frequently until lightly browned.
+                                </li>
+                                <li><b>Assemble the salad:</b> In a large bowl, toss the watercress with cherry
+                                    tomatoes, red onion, cucumber, and avocado. </li>
+                                <li><b>Make the dressing:</b> In a small bowl, whisk together 2 tablespoons of olive
+                                    oil, 1 tablespoon of lemon juice, a pinch of salt, and pepper.</li>
+                                <li><b>Dress the salad:</b> Pour the dressing over the salad and toss gently to combine.
+                                </li>
+                                <li><b>Garnish</b> Sprinkle the crumbled feta cheese and toasted nuts over the salad.
+                                </li>
+                                <li><b>Serve:</b> Serve the salad immediately as a side dish or light meal.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+</div>
+
+
+
+        <script src="js/myscripts.js"></script>
+</body>
+<!--Need to include more information in the footer like a link to Privacy Policy, possibly social media links, FAQ, -->
+<footer>
+       
+    <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="production.html">Production</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                    
+                </ul>
+            </div>
+    
+         <div class="footer-section">
+            <h3>Follow us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/Waituhi-Watercress-102394295181234" class="fa fa-facebook"></a></li>
+                
+                <li><a href="https://twitter.com/WaituhiWatercre" class="fa fa-twitter"></a></li>
+            </ul>
+        </div>
+    <div class="footer-section">
+        <h3>Credits</h3>
+        <ul>
+            <li><a href="references.html">References</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            
+        </ul>
+       
+        </div>
+    </div>
+
+        <div class="footer_container">
+            <div class="footer_button">
+                <a href="contactus.html">
+                    <button id="contact_button" class="contact_button">Contact us</button>
+                </a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Waituhi Watercress. All Rights Reserved.</p>
+        </div>
+    
+    
+
+    
+
+</footer>
+
+</html>
